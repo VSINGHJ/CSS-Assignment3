@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/bgimage.jpg');
+    background-repeat: inherit;
+    background-size: cover;
+}
+
+header {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient(to right, #ffcc00, #f2f2f2, #333);
+}
+
+main {
+    font-family: 'Lato', sans-serif;
+    padding: 20px;
+    margin: 10%;
+    background-color: brown;
+    border-radius: 90px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border: 5px solid #333;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+.facts,
+.nutrition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.intro img,
+.facts img,
+.nutrition img {
+    max-width: 90%;
+    height: 40%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 1.0s;
+}
+
+.contact-form form {
+    margin-top: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: brown;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    border: 2px solid #333;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.facts-content,
+.nutrition-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.facts-content img,
+.nutrition-content img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s;
+}
+
+.facts-content img:hover,
+.nutrition-content img:hover {
+    transform: scale(1.1);
+}
+
+.intro img:hover,
+.facts img:hover,
+.nutrition img:hover {
+    transform: scale(1.1);
+}
+
+.facts h2,
+.nutrition h2 {
+    color: #ffcc00;
+    transition: color 0.2s;
+}
+
+.facts h2:hover,
+.nutrition h2:hover {
+    color: #333;
+}
+
+.facts ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.facts li {
+    margin-bottom: 10px;
+    border: 2px solid #333;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: orange;
+}
+
+.nutrition p {
+    border: 2px solid #333;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: orange;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    color: brown;
+    padding: 30px 0;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo,
+.company-info,
+.contact-form {
+    background: linear-gradient(to right, #ffcc00, #f2f2f2, #333);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
